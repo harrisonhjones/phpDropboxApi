@@ -1,0 +1,1 @@
+<?phprequire "Dropbox.php";$db = new Dropbox('username', 'password');try{	$db->upload('readme.txt',"Public");	echo "File uploaded";}catch (Exception $e){	echo 'File upload exception: ',  $e->getMessage(), "<BR/>";}?>
