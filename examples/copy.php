@@ -5,7 +5,7 @@ $db = new Dropbox('username', 'password');
 
 try
 {
-	$cpy = $db->copy(array('/SRCFolder/File1','/SRCFolder/File2'),'/DESTFolder');//
+	$cpy = $db->copy(array('/fromFOLDER/fromFILE','/fromFOLDER2/fromFILE2'),'/toFOLDER');//
 	echo "File copied";
 }
 catch (Exception $e)
